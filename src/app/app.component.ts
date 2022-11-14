@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'employee-Payroll';
-  
+  router: any;
+  goHome(){
+    this.router.navigate([""])
+  }
 }

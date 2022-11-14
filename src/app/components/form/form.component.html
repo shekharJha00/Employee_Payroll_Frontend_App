@@ -6,7 +6,7 @@
         <div class="row-content">
             <label class ="label text" for="name">Name</label>
             <input class = "input" type="txt" name="name" [(ngModel)]="employee.name"  id="name" placeholder=" Enter your Name" required> 
-            
+           
         </div>  
         <div class="row-content">
             <label class="label text" for="profile">Profile Image</label>
@@ -46,13 +46,14 @@
                 <label class="text" for="female"> Female </label>
             </div>
         </div>
+      
 
         <div class="row-content">
             <label class="label text" for="department">Department</label>
             <div *ngFor="let departName of depart2,let i = index ">
                 <input type="checkbox" id="department" name="department" [value]="this.
                 employee.department[i]" (change)="checkBoxChange(departName)" (ngModel)="departName" 
-                    [ngModelOptions]="{standalone: true}" ngDefaultControl> {{departName}} 
+                    [ngModelOptions]="{standalone: true}" ngDefaultControl> {{departName}}
             </div>
         </div>
 
