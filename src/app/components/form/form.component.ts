@@ -17,8 +17,8 @@ export class FormComponent implements OnInit {
 
   constructor(private router:Router,
               private service:EmployeeServiceService,
-              public update:HomeComponent,
-              private route:ActivatedRoute) { }
+             
+             ) { }
   
   ngOnInit(): void {
     if(this.service.id != 0){
